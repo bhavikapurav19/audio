@@ -107,6 +107,7 @@
                 console.log(clab);
                 const classPrediction = ((clab == "Background Noise")?"Not Confident":"Confident") + ": " + max.toFixed(2);
                 labelContainer.childNodes[0].innerHTML = classPrediction;
+                console.log(classPrediction);
             }, {
                 includeSpectrogram: true, // in case listen should return result.spectrogram
                 probabilityThreshold: 0.75,

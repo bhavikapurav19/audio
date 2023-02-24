@@ -94,6 +94,7 @@
             // 2. A configuration object with adjustable fields
             recognizer.listen(result => {
                 const scores = result.scores; // probability of prediction for each class
+                console.log(scores);
                 // render the probability scores per class
                 var max = 0;
                 var clab;
